@@ -87,6 +87,54 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+   * {
+     box-sizing: border-box;
+   }
+
+   body {
+    font-family: termina, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+
+   main {
+     height: 100vh;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+   }
+
+   .title {
+     grid-column: 1;
+     grid-row: 1;
+     background-color: #eb9e06;
+     display: grid;
+     align-items: start;
+     justify-items: center;
+     padding: 2rem;
+   }
+
+   .description {
+     grid-column: 2;
+     grid-row: 1;
+     background-color: #fff;
+     display: grid;
+     align-items: end;
+     justify-items: center;
+     padding: 2rem;
+   }
+
+   img {
+     grid-column: 1/-1;
+     grid-row: 1;
+     height: 70vh;
+     align-self: center;
+     justify-self: center;
+     z-index: 1;
+   }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
